@@ -2,7 +2,7 @@ import "dotenv/config";
 
 export default {
   npm: {
-    publish: true,
+    publish: false,
     access: "public",
   },
   git: {
