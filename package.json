@@ -1,12 +1,12 @@
 {
   "name": "@estate-information-system/shared-types",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "release": "release-it",
+    "release": "release-it --config release-it.config.cjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

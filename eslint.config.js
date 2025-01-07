@@ -17,7 +17,7 @@ export default [
     },
   },
   {
-    files: ["**/*.ts", "**/*.tsx"],
+    files: ["**/*.ts"],
     languageOptions: {
       parser: tsParser,
     },
@@ -43,6 +43,12 @@ export default [
       ],
       "@typescript-eslint/consistent-type-imports": "warn",
       eqeqeq: ["warn", "always"],
+    },
+  },
+  {
+    files: ["**/*.cjs"], // Добавляем поддержку Node.js для .cjs файлов
+    languageOptions: {
+      globals: { ...globals.node },
     },
   },
   {
