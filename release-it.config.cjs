@@ -1,6 +1,6 @@
-import "dotenv/config";
+require("dotenv/config");
 
-export default {
+module.exports = {
   npm: {
     publish: false,
     access: "public",
@@ -17,7 +17,7 @@ export default {
     token: process.env.GITHUB_TOKEN,
   },
   hooks: {
-    "before:init": ["npm lint", "npm format"],
+    "before:init": ["npm run lint", "npm run format"],
     "before:release": ["npm run build"],
   },
 };
