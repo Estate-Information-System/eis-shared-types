@@ -7,7 +7,7 @@ module.exports = {
   },
   git: {
     commitMessage: "chore: release ${version}",
-    tagName: "${version}",
+    tagName: "v${version}",
     requireCleanWorkingDir: true,
     requireBranch: "main",
     push: true,
