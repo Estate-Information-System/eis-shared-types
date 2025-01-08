@@ -10,8 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "publish": "npm publish"
+    "format:check": "prettier --check ."
   },
   "keywords": [],
   "author": "Vladislav Tsay (https://github.com/rubyhat)",
