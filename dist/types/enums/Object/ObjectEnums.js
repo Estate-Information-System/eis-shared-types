@@ -126,3 +126,25 @@ export var GarageEnum;
     GarageEnum["Part"] = "part";
     GarageEnum["None"] = "none";
 })(GarageEnum || (GarageEnum = {}));
+export var DealTypeEnum;
+(function (DealTypeEnum) {
+    DealTypeEnum["Sell"] = "sell";
+    DealTypeEnum["Rent"] = "rent";
+})(DealTypeEnum || (DealTypeEnum = {}));
+export var BusinessTypeEnum;
+(function (BusinessTypeEnum) {
+    BusinessTypeEnum["FreeSpace"] = "freeSpace";
+    BusinessTypeEnum["Cafe"] = "cafe";
+    BusinessTypeEnum["Office"] = "office";
+    BusinessTypeEnum["AreaBase"] = "areaBase";
+    BusinessTypeEnum["Factory"] = "factory";
+    BusinessTypeEnum["Store"] = "store";
+})(BusinessTypeEnum || (BusinessTypeEnum = {}));
+export var VisibilityStatusEnum;
+(function (VisibilityStatusEnum) {
+    VisibilityStatusEnum["Active"] = "active";
+    VisibilityStatusEnum["Sold"] = "sold";
+    VisibilityStatusEnum["Canceled"] = "canceled";
+    VisibilityStatusEnum["Checking"] = "checking";
+    VisibilityStatusEnum["Rented"] = "rented";
+})(VisibilityStatusEnum || (VisibilityStatusEnum = {}));

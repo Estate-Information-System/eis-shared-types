@@ -125,3 +125,25 @@ export enum GarageEnum {
   Part = "part",
   None = "none",
 }
+
+export enum DealTypeEnum {
+  Sell = "sell",
+  Rent = "rent",
+}
+
+export enum BusinessTypeEnum {
+  FreeSpace = "freeSpace",
+  Cafe = "cafe",
+  Office = "office",
+  AreaBase = "areaBase",
+  Factory = "factory",
+  Store = "store",
+}
+
+export enum VisibilityStatusEnum {
+  Active = "active",
+  Sold = "sold",
+  Canceled = "canceled",
+  Checking = "checking",
+  Rented = "rented",
+}

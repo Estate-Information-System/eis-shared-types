@@ -109,4 +109,23 @@ export declare enum GarageEnum {
     Part = "part",
     None = "none"
 }
+export declare enum DealTypeEnum {
+    Sell = "sell",
+    Rent = "rent"
+}
+export declare enum BusinessTypeEnum {
+    FreeSpace = "freeSpace",
+    Cafe = "cafe",
+    Office = "office",
+    AreaBase = "areaBase",
+    Factory = "factory",
+    Store = "store"
+}
+export declare enum VisibilityStatusEnum {
+    Active = "active",
+    Sold = "sold",
+    Canceled = "canceled",
+    Checking = "checking",
+    Rented = "rented"
+}
 //# sourceMappingURL=ObjectEnums.d.ts.map
