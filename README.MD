@@ -36,7 +36,7 @@ Import the required types and enums in your project:
 ### TypeScript Example
 
 ```typescript
-import { CategoryEnum } from "@estate-information-system/shared-types/dist/types/enums/Object/ObjectEnums";
+import { CategoryEnum } from "@estate-information-system/shared-types";
 
 const category: CategoryEnum = "apartment";
 console.log(category);

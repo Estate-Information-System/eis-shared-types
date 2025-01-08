@@ -1,1 +1,1 @@
-export * from "./ObjectEnums";
+export * from "./ObjectEnums.js";
