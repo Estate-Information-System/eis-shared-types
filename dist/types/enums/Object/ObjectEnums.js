@@ -1,13 +1,23 @@
+/** Категории объекта недвижимости */
 export var CategoryEnum;
 (function (CategoryEnum) {
+    /** Категория недвижимости - Квартира */
     CategoryEnum["Apartment"] = "apartment";
+    /** Категория недвижимости - Дом */
     CategoryEnum["House"] = "house";
+    /** Категория недвижимости - Коттедж */
     CategoryEnum["Cottage"] = "cottage";
+    /** Категория недвижимости - Земельный участок */
     CategoryEnum["Land"] = "land";
+    /** Категория недвижимости - Коммерческая недвижимость */
     CategoryEnum["Commercial"] = "commercial";
+    /** Категория недвижимости - Бизнес */
     CategoryEnum["Business"] = "business";
+    /** Категория недвижимости - Заводы и фабрики */
     CategoryEnum["Factory"] = "factory";
+    /** Категория недвижимости - Другое */
     CategoryEnum["Other"] = "other";
+    /** Категория недвижимости - Таунхаус */
     CategoryEnum["Townhouse"] = "townhouse";
 })(CategoryEnum || (CategoryEnum = {}));
 export var ExchangeEnum;

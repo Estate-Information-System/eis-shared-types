@@ -12,7 +12,8 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build": "tsc --project tsconfig.json && typedoc",
+    "build:docs": "typedoc",
     "release": "release-it --config release-it.config.cjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -34,6 +35,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "prettier": "^3.4.2",
     "release-it": "^18.0.0",
+    "typedoc": "^0.27.6",
     "typescript": "^5.7.2"
   },
   "publishConfig": {

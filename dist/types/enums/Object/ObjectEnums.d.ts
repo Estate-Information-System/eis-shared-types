@@ -1,12 +1,22 @@
+/** Категории объекта недвижимости */
 export declare enum CategoryEnum {
+    /** Категория недвижимости - Квартира */
     Apartment = "apartment",
+    /** Категория недвижимости - Дом */
     House = "house",
+    /** Категория недвижимости - Коттедж */
     Cottage = "cottage",
+    /** Категория недвижимости - Земельный участок */
     Land = "land",
+    /** Категория недвижимости - Коммерческая недвижимость */
     Commercial = "commercial",
+    /** Категория недвижимости - Бизнес */
     Business = "business",
+    /** Категория недвижимости - Заводы и фабрики */
     Factory = "factory",
+    /** Категория недвижимости - Другое */
     Other = "other",
+    /** Категория недвижимости - Таунхаус */
     Townhouse = "townhouse"
 }
 export declare enum ExchangeEnum {

@@ -1,0 +1,10 @@
+{
+  "entryPoints": ["src/index.ts"], // Главная точка входа
+  "out": "docs", // Папка для сохранения документации
+  "includeVersion": true, // Указывает версию из package.json
+  "tsconfig": "tsconfig.json", // Использовать настройки TypeScript
+  "name": "EIS Shared Types", // Название проекта
+  "excludePrivate": true, // Исключить приватные элементы
+  "excludeProtected": true, // Исключить protected элементы
+  "excludeExternals": true // Исключить внешние зависимости
+}
