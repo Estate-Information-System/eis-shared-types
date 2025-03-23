@@ -20,24 +20,35 @@ export var CategoryEnum;
     /** Категория недвижимости - Таунхаус */
     CategoryEnum["Townhouse"] = "townhouse";
 })(CategoryEnum || (CategoryEnum = {}));
+/** Рассматривается ли обмен данной недвижимости */
 export var ExchangeEnum;
 (function (ExchangeEnum) {
     ExchangeEnum["Yes"] = "yes";
     ExchangeEnum["No"] = "no";
 })(ExchangeEnum || (ExchangeEnum = {}));
+/** Находится ли недвижимость в залоге */
 export var PledgeEnum;
 (function (PledgeEnum) {
+    /** Недвижимость в залоге - Нет */
     PledgeEnum["None"] = "none";
+    /** Недвижимость в залоге - Да, у банка */
     PledgeEnum["Bank"] = "bank";
+    /** Недвижимость в залоге - Да, арест */
     PledgeEnum["Police"] = "police";
 })(PledgeEnum || (PledgeEnum = {}));
+/** Состояние документов данной недвижимости */
 export var DocumentsEnum;
 (function (DocumentsEnum) {
+    /** Документы в порядке */
     DocumentsEnum["Good"] = "good";
+    /** Документы не в порядке, нужно провести работу */
     DocumentsEnum["NeedUpdate"] = "needUpdate";
+    /** Нужно проверить документы */
     DocumentsEnum["NeedCheck"] = "needCheck";
+    /** Есть проблемы с документами */
     DocumentsEnum["Bad"] = "bad";
 })(DocumentsEnum || (DocumentsEnum = {}));
+/** Техническое состояние недвижимости */
 export var HouseConditionEnum;
 (function (HouseConditionEnum) {
     HouseConditionEnum["Perfect"] = "perfect";
@@ -48,6 +59,7 @@ export var HouseConditionEnum;
     HouseConditionEnum["Medium"] = "medium";
     HouseConditionEnum["Clean"] = "clean";
 })(HouseConditionEnum || (HouseConditionEnum = {}));
+/** Материал стен дома или здания в котором находится недвижимость */
 export var HouseWallMaterialEnum;
 (function (HouseWallMaterialEnum) {
     HouseWallMaterialEnum["Brick"] = "brick";
@@ -61,6 +73,7 @@ export var HouseWallMaterialEnum;
     HouseWallMaterialEnum["GasConcreteBlock"] = "gasConcreteBlock";
     HouseWallMaterialEnum["FoamBlock"] = "foamBlock";
 })(HouseWallMaterialEnum || (HouseWallMaterialEnum = {}));
+/** Материал крыши дома или здания в котором находится недвижимость */
 export var HouseRoofMaterialEnum;
 (function (HouseRoofMaterialEnum) {
     HouseRoofMaterialEnum["Tile"] = "tile";
@@ -71,22 +84,31 @@ export var HouseRoofMaterialEnum;
     HouseRoofMaterialEnum["CorrugatedSheetRoof"] = "corrugatedSheetRoof";
     HouseRoofMaterialEnum["Slate"] = "slate";
 })(HouseRoofMaterialEnum || (HouseRoofMaterialEnum = {}));
+/** Имеется ли мебель в недвижимости, которая останется после продажи/аренды */
 export var FurnitureEnum;
 (function (FurnitureEnum) {
+    /** Полностью мебелирована */
     FurnitureEnum["Part"] = "part";
+    /** Частично мебелирована */
     FurnitureEnum["Full"] = "full";
+    /** Мебели нет */
     FurnitureEnum["None"] = "none";
 })(FurnitureEnum || (FurnitureEnum = {}));
+/** Имеется ли интернет */
 export var EthernetEnum;
 (function (EthernetEnum) {
     EthernetEnum["Connected"] = "connected";
     EthernetEnum["ToConnect"] = "toConnect";
     EthernetEnum["None"] = "none";
 })(EthernetEnum || (EthernetEnum = {}));
+/** Тип дома, полностью реализуется дом или частично, например когда дом на 2 хозяина и продается только часть дома */
 export var HouseTypeEnum;
 (function (HouseTypeEnum) {
+    /** Часть дома */
     HouseTypeEnum["Part"] = "part";
+    /** Полностью целый дом */
     HouseTypeEnum["Full"] = "full";
+    /** Другое, нестандартный случай */
     HouseTypeEnum["Other"] = "other";
 })(HouseTypeEnum || (HouseTypeEnum = {}));
 export var ElectricTypeEnum;
@@ -150,11 +172,48 @@ export var BusinessTypeEnum;
     BusinessTypeEnum["Factory"] = "factory";
     BusinessTypeEnum["Store"] = "store";
 })(BusinessTypeEnum || (BusinessTypeEnum = {}));
+/** Статус объекта недвижимости */
 export var VisibilityStatusEnum;
 (function (VisibilityStatusEnum) {
+    /** Активный, доступен для просмотра всем */
     VisibilityStatusEnum["Active"] = "active";
+    /** Продан, доступен для просмотра всем, если задан фильтр */
     VisibilityStatusEnum["Sold"] = "sold";
+    /** Отменен, доступен для просмотра только сотрудникам */
     VisibilityStatusEnum["Canceled"] = "canceled";
+    /** На проверке, доступен для просмотра только сотрудникам */
     VisibilityStatusEnum["Checking"] = "checking";
+    /** Сдан в аренду, доступен для просмотра только сотрудникам */
     VisibilityStatusEnum["Rented"] = "rented";
 })(VisibilityStatusEnum || (VisibilityStatusEnum = {}));
+/** Источник покупателя */
+export var SourceCustomerEnum;
+(function (SourceCustomerEnum) {
+    /** Агентство Недвижимости Roze */
+    SourceCustomerEnum["Roze"] = "roze";
+    /** Информационный портал Крыша */
+    SourceCustomerEnum["Krisha"] = "krisha";
+    /** Аккаунты компании, личного бренда или реклама в Instagram */
+    SourceCustomerEnum["Instagram"] = "instagram";
+    /** Аккаунты компании, личного бренда или реклама в ТикТок */
+    SourceCustomerEnum["TikTok"] = "tiktok";
+    /** Частные случаи */
+    SourceCustomerEnum["Other"] = "other";
+})(SourceCustomerEnum || (SourceCustomerEnum = {}));
+/** Чья в итоге сделка. Может быть такое, что была у нас в работе, но клиент сам нашел покупателя. */
+export var DealOwnerEnum;
+(function (DealOwnerEnum) {
+    DealOwnerEnum["Agency"] = "agency";
+    DealOwnerEnum["Owner"] = "owner";
+    DealOwnerEnum["Other"] = "other";
+})(DealOwnerEnum || (DealOwnerEnum = {}));
+/** Подходит ли под ипотеку */
+export var MortgageEnum;
+(function (MortgageEnum) {
+    /** Подходит под ипотеку */
+    MortgageEnum["Accepted"] = "accepted";
+    /** Не подходит под ипотеку */
+    MortgageEnum["Declined"] = "declined";
+    /** Можно устроить ипотеку */
+    MortgageEnum["Possibly"] = "possibly";
+})(MortgageEnum || (MortgageEnum = {}));

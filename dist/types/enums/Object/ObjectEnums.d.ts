@@ -19,21 +19,32 @@ export declare enum CategoryEnum {
     /** Категория недвижимости - Таунхаус */
     Townhouse = "townhouse"
 }
+/** Рассматривается ли обмен данной недвижимости */
 export declare enum ExchangeEnum {
     Yes = "yes",
     No = "no"
 }
+/** Находится ли недвижимость в залоге */
 export declare enum PledgeEnum {
+    /** Недвижимость в залоге - Нет */
     None = "none",
+    /** Недвижимость в залоге - Да, у банка */
     Bank = "bank",
+    /** Недвижимость в залоге - Да, арест */
     Police = "police"
 }
+/** Состояние документов данной недвижимости */
 export declare enum DocumentsEnum {
+    /** Документы в порядке */
     Good = "good",
+    /** Документы не в порядке, нужно провести работу */
     NeedUpdate = "needUpdate",
+    /** Нужно проверить документы */
     NeedCheck = "needCheck",
+    /** Есть проблемы с документами */
     Bad = "bad"
 }
+/** Техническое состояние недвижимости */
 export declare enum HouseConditionEnum {
     Perfect = "perfect",
     Good = "good",
@@ -43,6 +54,7 @@ export declare enum HouseConditionEnum {
     Medium = "medium",
     Clean = "clean"
 }
+/** Материал стен дома или здания в котором находится недвижимость */
 export declare enum HouseWallMaterialEnum {
     Brick = "brick",
     Wood = "wood",
@@ -55,6 +67,7 @@ export declare enum HouseWallMaterialEnum {
     GasConcreteBlock = "gasConcreteBlock",
     FoamBlock = "foamBlock"
 }
+/** Материал крыши дома или здания в котором находится недвижимость */
 export declare enum HouseRoofMaterialEnum {
     Tile = "tile",
     Soft = "soft",
@@ -64,19 +77,28 @@ export declare enum HouseRoofMaterialEnum {
     CorrugatedSheetRoof = "corrugatedSheetRoof",
     Slate = "slate"
 }
+/** Имеется ли мебель в недвижимости, которая останется после продажи/аренды */
 export declare enum FurnitureEnum {
+    /** Полностью мебелирована */
     Part = "part",
+    /** Частично мебелирована */
     Full = "full",
+    /** Мебели нет */
     None = "none"
 }
+/** Имеется ли интернет */
 export declare enum EthernetEnum {
     Connected = "connected",
     ToConnect = "toConnect",
     None = "none"
 }
+/** Тип дома, полностью реализуется дом или частично, например когда дом на 2 хозяина и продается только часть дома */
 export declare enum HouseTypeEnum {
+    /** Часть дома */
     Part = "part",
+    /** Полностью целый дом */
     Full = "full",
+    /** Другое, нестандартный случай */
     Other = "other"
 }
 export declare enum ElectricTypeEnum {
@@ -131,11 +153,45 @@ export declare enum BusinessTypeEnum {
     Factory = "factory",
     Store = "store"
 }
+/** Статус объекта недвижимости */
 export declare enum VisibilityStatusEnum {
+    /** Активный, доступен для просмотра всем */
     Active = "active",
+    /** Продан, доступен для просмотра всем, если задан фильтр */
     Sold = "sold",
+    /** Отменен, доступен для просмотра только сотрудникам */
     Canceled = "canceled",
+    /** На проверке, доступен для просмотра только сотрудникам */
     Checking = "checking",
+    /** Сдан в аренду, доступен для просмотра только сотрудникам */
     Rented = "rented"
+}
+/** Источник покупателя */
+export declare enum SourceCustomerEnum {
+    /** Агентство Недвижимости Roze */
+    Roze = "roze",
+    /** Информационный портал Крыша */
+    Krisha = "krisha",
+    /** Аккаунты компании, личного бренда или реклама в Instagram */
+    Instagram = "instagram",
+    /** Аккаунты компании, личного бренда или реклама в ТикТок */
+    TikTok = "tiktok",
+    /** Частные случаи */
+    Other = "other"
+}
+/** Чья в итоге сделка. Может быть такое, что была у нас в работе, но клиент сам нашел покупателя. */
+export declare enum DealOwnerEnum {
+    Agency = "agency",
+    Owner = "owner",
+    Other = "other"
+}
+/** Подходит ли под ипотеку */
+export declare enum MortgageEnum {
+    /** Подходит под ипотеку */
+    Accepted = "accepted",
+    /** Не подходит под ипотеку */
+    Declined = "declined",
+    /** Можно устроить ипотеку */
+    Possibly = "possibly"
 }
 //# sourceMappingURL=ObjectEnums.d.ts.map

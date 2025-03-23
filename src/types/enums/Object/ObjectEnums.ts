@@ -185,3 +185,34 @@ export enum VisibilityStatusEnum {
   /** Сдан в аренду, доступен для просмотра только сотрудникам */
   Rented = "rented",
 }
+
+/** Источник покупателя */
+export enum SourceCustomerEnum {
+  /** Агентство Недвижимости Roze */
+  Roze = "roze",
+  /** Информационный портал Крыша */
+  Krisha = "krisha",
+  /** Аккаунты компании, личного бренда или реклама в Instagram */
+  Instagram = "instagram",
+  /** Аккаунты компании, личного бренда или реклама в ТикТок */
+  TikTok = "tiktok",
+  /** Частные случаи */
+  Other = "other",
+}
+
+/** Чья в итоге сделка. Может быть такое, что была у нас в работе, но клиент сам нашел покупателя. */
+export enum DealOwnerEnum {
+  Agency = "agency",
+  Owner = "owner",
+  Other = "other",
+}
+
+/** Подходит ли под ипотеку */
+export enum MortgageEnum {
+  /** Подходит под ипотеку */
+  Accepted = "accepted",
+  /** Не подходит под ипотеку */
+  Declined = "declined",
+  /** Можно устроить ипотеку */
+  Possibly = "possibly",
+}

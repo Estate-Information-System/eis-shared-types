@@ -6,7 +6,7 @@ module.exports = {
     access: "public",
   },
   git: {
-    commitMessage: "chore: release ${version}",
+    commitMessage: "Release v${version}",
     tagName: "v${version}",
     requireCleanWorkingDir: true,
     requireBranch: "main",
